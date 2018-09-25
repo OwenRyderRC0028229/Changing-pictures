@@ -12,9 +12,27 @@ namespace Changing_pictures
 {
     public partial class Form1 : Form
     {
+        private Image milner;
+        private Image andyrobbo;
+
         public Form1()
         {
             InitializeComponent();
+            Milner = Properties.Resources.milner;
+            AndyRobbo = Properties.Resources.andyrobbo;
+
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if (Milner.Image == milner)
+            {
+                AndyRobbo.Image = andyrobbo;
+            }
+            else
+            {
+                Milner.Image = milner;
+            }
     }
 }
+    }
